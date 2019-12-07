@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <header>
+        <h1> Movement
+        </h1>
+        <p>
+            Here is some fabulous content
+        </p>
+
+        <form name="passdata" action ='.' method="POST">
+            <label>passion!</label>
+            <input type ="exp1" name="passion" placeholder="Figure Skating">
+            <input type="input2" name="info" class="form-control"
+               id="input2" aria-describedby="emailHelp"
+               placeholder="info"> <button type="submit" class="btn btn-primary" placeholder="info">Submit</button>
+        </form>
+
+    <form name="choice" action="viewPoses" method="POST">
+        <select id="option" name="choice">
+          <option value="1" name="input">Ballet</option>
+          <option value="2" name="input">Body Building</option>
+          <option value="3" name="input">Yoga</option>
+          <option value="4" name="input">Figure Skating</option>
+        </select>
+        <input type="submit" class="myButton" value="submit" />
+    </form>
+    </header>
+
+{% endblock %}
